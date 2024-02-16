@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto";
+ font-family: 'General Sans', sans-serif;
+}
+body{
+  background-color: #191919;
+}
+
+/* sidebar */
+
+.container {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+main {
+  width: 86%;
+  padding: 20px;
+  background-color: #191919;
+  position: relative;
+  right: 100;
+  padding-left: 300px;
+  z-index: 0;
+  box-sizing: content-box;
+ 
+
+}
+.sidebar {
+  background: #2b2b2b;
+  color: #fff;
+  height: 100%;
+  width: 150px;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 300;
+}
+.top_section {
+  display: grid;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.profile img {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 150px;
+  height: 150px;
+}
+.name {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.name h3 {
+  font-size: 1rem;
+}
+
+.name p {
+  color: #ffffff;
+  opacity: 30%;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.icon img {
+  width: 25px;
+}
+
+.link {
+  display: flex;
+  color: #ffffff;
+  padding: 8px 30px;
+  gap: 20px;
+  transition: all 0.5s;
+}
+.link:hover {
+  background: #bababa17;
+  opacity: 10%;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.active {
+  background: #bababa17;
+  color: #ffffff;
+}
+
+.active .link_text {
+  color: #ffffff;
+  opacity: 100%;
+}
+
+.link_text {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 20%;
+  margin-top: 2px;
+}
+
+.logout {
+  background-color: rgba(234, 113, 34, 0.53);
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 170px;
+  height: 55px;
+  border-radius: 30px;
+ 
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.logout img {
+  width: 30px;
+  height: 30px;
+}
+
+.logout a {
+  color: #ffffff;
+}
+
+/* Header */
+
+header {
+  height: 60px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+
+.user {
+  display: flex;
+  gap: 8px;
+  background-color: #2b2b2b;
+  width: 200px;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 25px;
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.user-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: 0.7rem;
+}
+
+.user-txt h3 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.user-txt p {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Dashboard */
+.header p {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 2rem;
+}
+
+.header span {
+  color: #ffffff;
+}
+
+/* Content */
+.content {
+  position: absolute;
+  top: 6rem;
+  right: auto;
+  left: auto;
+  width: 1200px;
+  height: 620px;
+  background: linear-gradient(to bottom, #2b2b2b 0%, rgba(43, 43, 43, 0) 10%);
+  border-radius: 30px;
+}
+
+.card_b {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to bottom, #2b2b2b 0%, rgba(43, 43, 43, 0) 100%);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_b .txt {
+  margin: 0 auto;
+}
+
+.card_b .txt p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transform: translateY(-1.8rem);
+}
+
+.card_b .txt h1 {
+  color: #ea7122;
+  font-size: 5rem;
+  margin-left: 0.8rem;
+  transform: translateY(-1rem);
+}
+
+.card_container {
+  margin-top: 45px;
+}
+
+.card_container_1 {
+  display: flex;
+  gap: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card_s {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(to bottom, #2b2b2b 0%, rgba(43, 43, 43, 0) 100%);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_s .txt {
+  margin: 0 auto;
+}
+
+.card_s .txt p {
+  color: #ffffff;
+  font-size: 1rem;
+  transform: translateY(-0.8rem);
+  transform: translateX(0.5rem);
+}
+
+.card_s .txt h1 {
+  color: #ea7122;
+  font-size: 5rem;
+  margin-left: 0.8rem;
+  transform: translateY(-0.8rem);
+  transform: translateX(-0.3rem);
+}
+
+.card_container_2 {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.meetings {
+  margin-top: 2rem ;
+  width: 450px;
+  height: 350px;
+  overflow: auto;
+  background: linear-gradient(to bottom, #2b2b2b1a 10%, #1a1a1a 100%);
+  padding: 1rem;
+  border-radius: 20px;
+  
+}
+
+.meetings h1 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meeting_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.04);
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.meeting_container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+.meeting_container .title img {
+  width: 25px;
+  height: 25px;
+}
+
+.meeting_container .title p {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+.meeting_container .date {
+  padding-right: 0.5rem;
+}
+
+.meeting_container .date p {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.7rem;
+}
+
+.middle {
+ 
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  background-color: #191919;
+
+}
+
+/* Scrol bar */
+
+/* custom-scrollbar.css */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background:#2B2B2B /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background:  #EA7122; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+/* In your component's CSS file or styled-components */
+.scrollable-content {
+  height: 300px; /* Set the height of the scrollable content */
+  overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+/* Jobs component */
+.btn{
+  background-color: #EA7122;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  color: rgb(225, 215, 215);
+  border: none;
+}
+.jobposting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20rem;
+  margin: 0px 25px;
+  padding:0px 25px;
+  box-sizing: unset;
+
+}
+
+.cover{
+  margin: 10px;
+  margin-top: 45px;
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(to bottom, #2b2b2b 0%, rgba(43, 43, 43, 0) 100%);
+  border-radius: 25px;
+
+
+}
+.jobContent{
+  padding: 20px;
+  height:100vh;
+  overflow: auto;
+}
+
+
+.posts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.bagicon{
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  color: rgb(238, 231, 231);
+}
+.postname{
+  color: white;
+  margin-bottom: 15px;
+}
+
+.jobTitle{
+  margin-left: 45px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.25);
+  margin-right: 40px;
+}
+
+.choice{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+.eyeicon{
+ width: 70px; 
+ height: 70px;
+ color: rgba(255, 255, 255, 0.25);
+}
+.postDescription{
+  color: rgba(255, 255, 255, 0.25);
+}
+
